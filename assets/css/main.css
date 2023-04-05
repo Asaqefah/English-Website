@@ -1,0 +1,53 @@
+:root {
+  --bs-heading-color: #136087;
+}
+
+html[dir="rtl"] * {
+  font-family: "SABICTypefaceHeadline", sans-serif !important;
+}
+
+p {
+  /* font-size: 2rem; */
+}
+
+#scrollspyHero {
+  color: black;
+  font-size: 1rem !important;
+}
+
+mark.wave-highlight > span {
+  color: var(--bs-heading-color) !important;
+}
+
+/* ------ Typography ------ */
+
+@font-face {
+  font-family: "SABICTypefaceHeadline";
+  src: url("./assets/fonts/SABICTypefaceHeadline_Lt.woff2") format("woff2"),
+    url("./assets/fonts/SABICTypefaceHeadline_Lt.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SABICTypefaceHeadline";
+  src: url("./assets/fonts/SABICTypefaceHeadline_Rg.woff2") format("woff2"),
+    url("./assets/fonts/SABICTypefaceHeadline_Rg.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SABICTypefaceHeadline";
+  src: url("./assets/fonts/SABICTypefaceHeadline.woff2") format("woff2"),
+    url("./assets/fonts/SABICTypefaceHeadline.woff") format("woff");
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+}
+
+.paragraph.center {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}

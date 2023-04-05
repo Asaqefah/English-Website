@@ -22,46 +22,7 @@
 
   <!-- CSS Files -->
   <link rel="stylesheet" href="./assets/css/wave-bsb.css">
-  <style>
-    :root {
-      --bs-heading-color: #136087;
-    }
-    @font-face {
-  font-family: 'SABICTypefaceHeadline';
-  src: url('./assets/fonts/SABICTypefaceHeadline_Lt.woff2') format('woff2'),
-       url('./assets/fonts/SABICTypefaceHeadline_Lt.woff') format('woff');
-  font-weight: 300;
-  }
-
-  @font-face {
-    font-family: 'SABICTypefaceHeadline';
-    src: url('./assets/fonts/SABICTypefaceHeadline_Rg.woff2') format('woff2'),
-        url('./assets/fonts/SABICTypefaceHeadline_Rg.woff') format('woff');
-    font-weight: 500;
-  }
-
-  @font-face {
-    font-family: 'SABICTypefaceHeadline';
-    src: url('./assets/fonts/SABICTypefaceHeadline.woff2') format('woff2'),
-        url('./assets/fonts/SABICTypefaceHeadline.woff') format('woff');
-    font-weight: 700;
-  }
-
-  html[dir=rtl] * {
-    font-family: 'SABICTypefaceHeadline', sans-serif !important;
-  }
-
-  #scrollspyHero {
-    color: black;
-    font-size: 1rem !important;
-  }
-
-  mark.wave-highlight > span {
-    color: var(--bs-heading-color) !important;
-  }
-
-  </style>
-
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#bsb-tpl-navbar" data-bs-smooth-scroll="true" tabindex="0">
@@ -119,9 +80,9 @@
                 <a class="nav-link" href="#accordionExample" data-bs-dismiss="offcanvas"
                   data-bs-target="#offcanvasNavbar">الاسئلة الشائعة</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="en.html">English</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -133,41 +94,37 @@
   <section id="scrollspyHero" style="
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;;
+    gap: 1rem;
   ">
-    <!-- Hero 2 - Bootstrap Brain Component -->
-    <img src="./assets/img/bg/ELP-W.png" style="
-    flex-basis: 75%;
-    max-height: 35vmax;
-    object-fit: cover;
+    <!-- Image -->
+    <div style="
+    flex: 0 1 50%;
     ">
+      <img src="./assets/img/bg/ELP-W.png" style="
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      ">
+    </div>
 
-    <div class="container overflow-hidden" style="
-      flex: 1;
-      flex-shrink: 0;
+    <div class="row align-items-center container overflow-hidden" style="
+      flex: 0 1 50%;
     ">
-      <div class="row gy-5 gy-lg-0 align-items-lg-center justify-content-lg-between">
-        <div>
-          <h1 class="display-4 fw-bolder mb-3">
-            تحدث اللغة الانجليزية بطلاقة <br> على يد خبراء من بريطانيا و أمريكا
-            <!-- <br><mark class="wave-highlight wave-highlight-blue"><span class="wave-font-hw display-2 text-accent fw-normal"></span></mark> -->
-          </h1>
-          <!-- <p class="fs-4 mb-5">
-            تخصص ثلث مدة الدورة تقربيا للتركيز على مهارة المحادثة، بالاضافة الى بقية مهارات اللغة الاخرى
-          </p> -->
-          <div class="d-grid gap-2 d-sm-flex">
-            <button type="button" class="btn btn-primary btn-2xl rounded-pill px-4 gap-3">
-              لمزيد من المعلومات
-            </button>
-            <button type="button" class="btn btn-outline-primaryx btn-outline-accent btn-2xl rounded-pill px-4">سجل
-              الان</button>
-          </div>
+      <div>
+        <h1 class="display-4 fw-bolder mb-3">
+          تحدث اللغة الانجليزية بطلاقة <br> على يد خبراء من بريطانيا و أمريكا
+        </h1>
+        <div class="d-grid gap-2 d-sm-flex">
+          <button type="button" class="btn btn-primary btn-2xl rounded-pill px-4 gap-3">
+            لمزيد من المعلومات
+          </button>
+          <button type="button" class="btn btn-outline-primaryx btn-outline-accent btn-2xl rounded-pill px-4">سجل
+            الان</button>
         </div>
       </div>
     </div>
-
   </section>
 
   <!-- Main -->
@@ -179,7 +136,8 @@
       <div class="container mb-5 mb-md-6 mb-xl-10">
         <div class="row justify-content-md-center">
           <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
-            <h2 class="display-3 fw-bolder mb-4 text-center"><br><mark class="wave-highlight wave-highlight-yellow"><span
+            <h2 class="display-3 fw-bolder mb-4 text-center"><br><mark
+                class="wave-highlight wave-highlight-yellow"><span
                   class="wave-font-hw display-1 text-accent fw-normal">المميزات</span></mark></h2>
           </div>
         </div>
@@ -199,14 +157,6 @@
               قاعات تدريب لا يزيد عدد المتدربين فيها عن 15 متدرب
             </h4>
             <p class="mb-3 text-secondary"></p>
-            <a href="#!" class="fw-bold text-decoration-none link-primary">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg>
-            </a>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="badge wave-bg-green text-primary p-3 mb-4">
@@ -221,19 +171,10 @@
             <h4 class="mb-3">
               دورات مصممة لتحقيق احتياجات
               المتعلم عبر منهج اكسفورد البريطاني بخمس مستويات
-
             </h4>
             <p class="mb-3 text-secondary">
 
             </p>
-            <a href="#!" class="fw-bold text-decoration-none link-primary">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg>
-            </a>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="badge wave-bg-pink text-primary p-3 mb-4">
@@ -250,14 +191,6 @@
             <p class="mb-3 text-secondary">
 
             </p>
-            <a href="#!" class="fw-bold text-decoration-none link-primary">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg>
-            </a>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="badge wave-bg-cyan text-primary p-3 mb-4">
@@ -287,6 +220,80 @@
       </div>
     </section>
 
+    <section id="scrollspyTeam" class="py-5 py-xl-8 py-xxl-16">
+      <div class="container mb-5 mb-md-6 mb-xl-10">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
+            <h2 class="display-3 fw-bolder mb-4"><br><mark class="wave-highlight wave-highlight-yellow"><span
+                  class="wave-font-hw display-1 text-accent fw-normal">طرق التعليم</span></mark></h2>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="paragraph center">
+        <p dir="auto" class="paragraph" style="text-align: justify;">
+          نقدم في ELP خمسة مستويات في اللغة الإنجليزية العامة، يتم تحديد مستوى المتدرب عن طريق اختبار تحديد المستوى
+          قبل بدء الدورة، ثم يتم البدء
+          بالدراسة في المستوى المناسب.
+        </p>
+
+        <p dir="auto" class="paragraph" style="text-align: justify;">
+          مدرة الدراسة في كل مستوى هي ما بين شهر ونصف إلى شهرين، وتكون لمدة 4 أيام أسبوعياً خلال الفترة المسائية. حيث
+          يدرس المتدربون خلال
+          الساعة الأولى والثانية، بينما يتم تخصيص الساعة الثالثة يومياً لممارسة المحادثة مع المدرب.
+        </p>
+
+        <p dir="auto" class="paragraph" style="text-align: justify;">
+          يطلب من المتدرب القيام بهام وواجبات يومية عن طريف منصة إلكترونية مخصصة لذلك، بينما يطلب منه أثناء الدورة
+          تقديم أكثر من عرض تقديمي يتم
+          تدريبه عليه.
+        </p>
+
+        <p dir="auto" class="paragraph" style="text-align: justify;">
+          يحصل المتدرب أسبوعياً على تقرير مفصل عن أداءه في لبرنامج.
+          وفي نهاية كل مستوى يحصل المتدرب على شهادتين: شهادة حضور، وشهادة اجتياز (اختيارية).
+        </p>
+        </div>
+      </div>
+    </section>
+
+    <section style="
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-block: 2rem;
+    ">
+      <!-- Image -->
+      <div style="
+        flex: 0 1 50%;
+      ">
+        <img src="./assets/img/syllabus/books.png" style="
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        ">
+      </div>
+
+      <div class="row container overflow-hidden" style="
+        flex: 0 1 50%;
+      ">
+        <div>
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
+            <h2 class="display-3 fw-bolder mb-4"><mark class="wave-highlight wave-highlight-yellow"><span
+                  class="wave-font-hw display-1 text-accent fw-normal">المناهج</span></mark></h2>
+          </div>
+          <p dir="auto" class="paragraph" style="text-align: justify;">
+            في ELP نعتمد منهج أكسفورد البريطاني العالمي (سلسلة: OXFORD HEAD WAY SE)، ويتم تحديداً استخدام النسخة
+            المتوافقة مع العادات والتقاليد في
+            المملكة العربية السعودية.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Call To Action 1 - Bootstrap Brain Component -->
     <section id="scrollspyAbout"
       class="px-2 py-8 py-xxl-16 background-position-center background-size-cover background-attachment-fixed bsb-overlay"
@@ -296,12 +303,105 @@
           <div class="col-12 col-md-9 col-lg-8 col-xl-8 col-xxl-7">
             <h2 class="display-3 mb-3 text-white text-uppercase"><mark class="text-white wave-highlight">تعريف
                 بالبرنامج</mark></h2>
-            <p class="text-white text-uppercase">
+            <p class="text-white text-uppercase paragraph">
               ELP (ENGLISH LANGUAGE PROGRAM) هو برنامج أنشأته الجامعة الإسلامية بالمدينة المنورة، يهدف إلى تقديم دورات
               في اللغة الإنجليزية
               بشكل احترافي للأفراد والقطاعات، من خال بيئة محفزة، وأدواتٍ احترافية، وبشهادات معتمدة.
             </p>
             <a href="#scrollspyContact" class="btn btn-accent btn-3xl rounded mb-0 text-nowrap">انضم معنا</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 py-xl-8 py-xxl-16">
+      <div class="container mb-5 mb-md-6 mb-xl-10">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
+            <h2 class="display-3 fw-bolder mb-4"><br><mark class="wave-highlight wave-highlight-yellow"><span
+                  class="wave-font-hw display-1 text-accent fw-normal">أهدافنا</span></mark></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container overflow-hidden">
+        <div class="row justify-content-center gy-5 gy-md-6 gx-md-4 gy-lg-0 gx-xxl-5">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="badge wave-bg-yellow text-primary p-3 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-pie-chart"
+                viewBox="0 0 16 16">
+                <path
+                  d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793V1.018zm1 0V7.5h6.482A7.001 7.001 0 0 0 8.5 1.018zM14.982 8.5H8.207l-4.79 4.79A7 7 0 0 0 14.982 8.5zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+              </svg>
+            </div>
+            <h4 class="mb-3">
+              عقد شراكات فعالة مع المؤسسات المجتمعية.
+            </h4>
+            <p class="mb-3 text-secondary"></p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="badge wave-bg-green text-primary p-3 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-aspect-ratio" viewBox="0 0 16 16">
+                <path
+                  d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5v-9zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
+                <path
+                  d="M2 4.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H3v2.5a.5.5 0 0 1-1 0v-3zm12 7a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H13V8.5a.5.5 0 0 1 1 0v3z" />
+              </svg>
+            </div>
+            <h4 class="mb-3">
+              توفير البيئة التعليمية الملائمة لتعلم وتطبيق اللغة الإنجليزية.
+            </h4>
+            <p class="mb-3 text-secondary">
+
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="badge wave-bg-pink text-primary p-3 mb-4">
+              <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23 1v18h-3v-1h2V2H2v16h8v1H1V1zm-7 2H8v1h8zm-2 3V5h-4v1zm-7 5H3v1h4zm0 2H3v1h4zm-4 3h2v-1H3zm14-3a2 2 0 1 1-2-2 2.002 2.002 0 0 1 2 2zm-1 0a1 1 0 1 0-1 1 1.001 1.001 0 0 0 1-1zm.002-4.293a.965.965 0 0 0 1.32.55 1.08 1.08 0 0 1 1.213.207 1.066 1.066 0 0 1 .21 1.21.966.966 0 0 0 .548 1.324 1.064 1.064 0 0 1 0 2.004.965.965 0 0 0-.549 1.323A1.05 1.05 0 0 1 18 16.816v7.046l-3-2.538-3 2.538v-7.046a1.05 1.05 0 0 1-.744-1.49.965.965 0 0 0-.549-1.324 1.064 1.064 0 0 1 0-2.004.966.966 0 0 0 .549-1.324 1.066 1.066 0 0 1 .209-1.21 1.08 1.08 0 0 1 1.212-.206.965.965 0 0 0 1.32-.551 1.064 1.064 0 0 1 2.005 0zm.998 13v-5.04a.93.93 0 0 0-.998.625 1.064 1.064 0 0 1-2.004 0 .93.93 0 0 0-.998-.625v5.039l2-1.692zm-1.94-4.749a1.967 1.967 0 0 1 1.853-1.308 2.12 2.12 0 0 1 .87.197l.058-.091a1.964 1.964 0 0 1 1.116-2.695v-.122a1.966 1.966 0 0 1-1.116-2.695l-.087-.084a1.965 1.965 0 0 1-2.694-1.117h-.12a1.965 1.965 0 0 1-2.694 1.117l-.087.084a1.966 1.966 0 0 1-1.116 2.695v.122a1.964 1.964 0 0 1 1.116 2.695l.058.09a2.12 2.12 0 0 1 .87-.196 1.967 1.967 0 0 1 1.853 1.308L15 17z" />
+                <path fill="none" d="M0 0h24v24H0z" />
+              </svg>
+            </div>
+            <h4 class="mb-3">
+              تقديم دورات مرنة لتلبية رغبات العميل.
+            </h4>
+            <p class="mb-3 text-secondary">
+
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="badge wave-bg-cyan text-primary p-3 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-alarm"
+                viewBox="0 0 16 16">
+                <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
+                <path
+                  d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+              </svg>
+            </div>
+            <h4 class="mb-3">
+              تقديم دورات تخصصية لتحقيق احتياج سوق العمل.
+            </h4>
+            <p class="mb-3 text-secondary">
+
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="badge wave-bg-cyan text-primary p-3 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-alarm"
+                viewBox="0 0 16 16">
+                <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
+                <path
+                  d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+              </svg>
+            </div>
+            <h4 class="mb-3">
+              تقديم دورات لغة إنجليزية بكافة المستويات عبر استخدام مناهج عالمية رائدة ومتطورة.
+            </h4>
+            <p class="mb-3 text-secondary">
+
+            </p>
           </div>
         </div>
       </div>
@@ -397,12 +497,10 @@
         </div>
       </div>
 
-      <p dir="auto" style="
-        font-size: 2rem;
-        text-align: center;
-      ">
-        جميع المدربون والمدربات في ELP لغتهم الأولى هي اللغة الإنجليزية (NATIVE SPEAKER)، من أمريكا وبريطانيا، وهم مدرسون ذو خبرة لمدة
-سنوات في تعليم اللغة، وحاصلون على شهادات مهنية تضمن تمكنهم من تعليم اللغة بإجادة تامة.
+      جميع المدربون والمدربات في ELP لغتهم الأولى هي اللغة الإنجليزية (NATIVE SPEAKER)، من أمريكا وبريطانيا، وهم
+      <p dir="auto" class="paragraph center">
+        مدرسون ذو خبرة لمدة
+        سنوات في تعليم اللغة، وحاصلون على شهادات مهنية تضمن تمكنهم من تعليم اللغة بإجادة تامة.
       </p>
 
       <!-- <div class="container overflow-hidden">
@@ -467,9 +565,11 @@
     <!-- Pricing 1 - Bootstrap Brain Component -->
     <section id="scrollspyPricing" class="wave-bg-sea-shell py-5 py-xl-8 py-xxl-16">
       <div class="container">
-        <div class="row gy-5 gy-lg-0 gx-lg-8 align-items-center" style="flex-direction: column; justify-content: center;">
-          <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
-            <h2 class="display-3 fw-bolder mb-4 text-center"><br><mark class="wave-highlight wave-highlight-yellow"><span
+        <div class="row gy-5 gy-lg-0 gx-lg-8 align-items-center"
+          style="flex-direction: column; justify-content: center;">
+          <div class="mb-5 col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
+            <h2 class="display-3 fw-bolder mb-4 text-center"><br><mark
+                class="wave-highlight wave-highlight-yellow"><span
                   class="wave-font-hw display-1 text-accent fw-normal">البرامج والأسعار</span></mark></h2>
           </div>
           <div class="col-12 col-lg-7">
@@ -503,7 +603,7 @@
                           <path
                             d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
                         </svg>
-                        <span><strong></strong> 
+                        <span><strong></strong>
                           اختبار تحديد مستوى
                         </span>
                       </li>
@@ -593,9 +693,8 @@
         <div class="row justify-content-md-center">
           <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
             <h2 class="display-3 fw-bolder mb-4">
-              <mark
-                class="wave-highlight wave-highlight-yellow"><span
-                class="wave-font-hw display-1 text-accent fw-normal">آراء المتدربين</span></mark>
+              <mark class="wave-highlight wave-highlight-yellow"><span
+                  class="wave-font-hw display-1 text-accent fw-normal">آراء المتدربين</span></mark>
             </h2>
           </div>
         </div>
@@ -610,7 +709,8 @@
                   <!-- <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy"
                     src="./assets/img/testimonial/testimonial-img-1.jpg" alt=""> -->
                   <figcaption>
-                    <blockquote class="bsb-blockquote-icon mb-4">كانت دورة تدريبية جادة مفيدة جدا بالنسبة لي</blockquote>
+                    <blockquote class="bsb-blockquote-icon mb-4">كانت دورة تدريبية جادة مفيدة جدا بالنسبة لي
+                    </blockquote>
                     <h4 class="mb-2">
 
                     </h4>
@@ -644,7 +744,9 @@
                   <!-- <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy"
                     src="./assets/img/testimonial/testimonial-img-4.jpg" alt=""> -->
                   <figcaption>
-                    <blockquote class="bsb-blockquote-icon mb-4">مجهود ملجوظ من ابسط الامور الثانوية الى الاساسية،، اتمنى الحفاظ على هذا المجهود في بقية المستويات القادمه، مل الشكر للاستاذ....... متعاون جدا </blockquote>
+                    <blockquote class="bsb-blockquote-icon mb-4">مجهود ملجوظ من ابسط الامور الثانوية الى الاساسية،،
+                      اتمنى الحفاظ على هذا المجهود في بقية المستويات القادمه، مل الشكر للاستاذ....... متعاون جدا
+                    </blockquote>
                     <h4 class="mb-2">
 
                     </h4>
@@ -670,7 +772,8 @@
           </div>
           <div class="col-12 col-lg-6">
             <h2 class="h1 mb-3">تواصل معنا</h2>
-            <p class="lead fs-4 text-secondary mb-5">ELP، الدور الأرضي، (مبنى 20 أ) مباني العمادات المساندة، الجامعة الإسلامية بالمدينة المنورة.</p>
+            <p class="lead fs-4 text-secondary mb-5">ELP، الدور الأرضي، (مبنى 20 أ) مباني العمادات المساندة، الجامعة
+              الإسلامية بالمدينة المنورة.</p>
             <div class="d-flex mb-4">
               <div class="mx-2 text-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-geo"
@@ -714,7 +817,8 @@
               <div>
                 <h4 class="mb-3">البريد الالكتروني</h4>
                 <p>
-                  <a class="link-secondary text-decoration-none" href="mailto:EngLPIUSA@gmail.com">EngLPIUSA@gmail.com</a>
+                  <a class="link-secondary text-decoration-none"
+                    href="mailto:EngLPIUSA@gmail.com">EngLPIUSA@gmail.com</a>
                 </p>
               </div>
             </div>
@@ -758,11 +862,13 @@
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                1- عقد شراكات فعالة مع المؤسسات المجتمعية.
-                2- توفير البيئة التعليمية الملائمة لتعلم وتطبيق اللغة الإنجليزية.
-                3- تقديم دورات مرنة لتلبية رغبات العميل.
-                4- تقديم دورات تخصصية لتحقيق احتياج سوق العمل.
-                5- تقديم دورات لغة إنجليزية بكافة المستويات باستخدام مناهج رائدة ومتطورة.
+                <ol>
+                  <li>عقد شراكات فعالة مع المؤسسات المجتمعية.</li>
+                  <li>توفير البيئة التعليمية الملائمة لتعلم وتطبيق اللغة الإنجليزية.</li>
+                  <li>تقديم دورات مرنة لتلبية رغبات العميل.</li>
+                  <li>تقديم دورات تخصصية لتحقيق احتياج سوق العمل.</li>
+                  <li>تقديم دورات لغة إنجليزية بكافة المستويات باستخدام مناهج رائدة ومتطورة.</li>
+                </ol>
               </div>
             </div>
           </div>
@@ -777,9 +883,11 @@
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 برامج ELP للغة الإنجليزية موجهة للجنسين من الفئات العمرية التالية:
-                1- البالغين (18 عاماً فما فوق).
-                2- الأطفال والشباب الصغار (من 7 – 17 عاماً).
-                3- القطاعات
+                <ol>
+                  <li>البالغين (18 عاماً فما فوق).</li>
+                  <li>الأطفال والشباب الصغار (من 7 – 17 عاماً).</li>
+                  <li>القطاعات.</li>
+                </ol>
               </div>
             </div>
           </div>
@@ -793,8 +901,10 @@
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                1- حاصلون على شهادات تخصصية في تدريس اللغة الإنجليزية.
-                2- لهم خبرة كبيرة في تدريس اللغة الإنجليزية.
+                <ol>
+                  <li>حاصلون على شهادات تخصصية في تدريس اللغة الإنجليزية.</li>
+                  <li>لهم خبرة كبيرة في تدريس اللغة الإنجليزية.</li>
+                </ol>
                 كما وأنهم من أهل اللغة الإنجليزية (من بريطانيا ومن الولايات المتحدة الأمريكية).
               </div>
             </div>
@@ -819,22 +929,220 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingsix">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
                 كيف تقسم الدرجات في دورات اللغة الإنجليزية العامة في ELP
               </button>
             </h2>
-            <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
+            <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                يطلب من كل متدرب بعد مضي 4 أسابيع من الدورة تقديم عرض تعريفي يلقيه أمام زملاءه باللغة الإنجليزية، ويطلب منه تقديم عرض
+                يطلب من كل متدرب بعد مضي 4 أسابيع من الدورة تقديم عرض تعريفي يلقيه أمام زملاءه باللغة الإنجليزية، ويطلب
+                منه تقديم عرض
                 آخر مرة ثانية في الأسبوع الأخير من الدورة، وتعادل تلك العروض 40% من الدرجة النهائية.
-                كما وتطلب من المتدرب واجبات ومهام يومية منزلية، يمكن له تأديتها عبر جهاز الجوال أو الكمبيوتر من خلال منصة خاصة تدعى
-                منصة LMS، ويمكن للمدرب متابعة أداء المتدربين لديه عبر المنصة. وتعادل تلك المهام والواجبات 40% من الدرجة النهائية.
+                كما وتطلب من المتدرب واجبات ومهام يومية منزلية، يمكن له تأديتها عبر جهاز الجوال أو الكمبيوتر من خلال
+                منصة خاصة تدعى
+                منصة LMS، ويمكن للمدرب متابعة أداء المتدربين لديه عبر المنصة. وتعادل تلك المهام والواجبات 40% من الدرجة
+                النهائية.
                 بينما يعادل الاختبار النهائي بعد كل مستوى 20% من الدرجة النهائية.
               </div>
             </div>
           </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                على ماذا يركز التدريب في دورات اللغة الإنجليزية العامة في ELP
+              </button>
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                نركز في ELP على مهارات اللغة الأربعة (القراءة والكتابة والتحدث والاستماع)، ونركز أكثر على مهارة التحدث
+                من خلال تخصيص
+                حوالي ثلث مدة الدورة لممارسته.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading9">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                أين تقع مقرات ELP
+              </button>
+            </h2>
+            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                تقع جميع مقرات ELP للرجال والنساء في حرم الجامعة الإسلامية بالمدينة المنورة (في مباني منفصلة).
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading10">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                كم عدد المتدربين في كل فصل تدريبي
+              </button>
+            </h2>
+            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                سياستنا في ELP تنص على أن لا يزيد عدد المتدربين في كل فصل تدريبي عن 15 متدرب، وذلك لرفع كفاءة العملية
+                التعليمية،
+                ولمساعدة المتدرب على ممارسة اللغة بشكل فعال، ومتابعته في ذلك.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading11">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                ما هي رؤية ELP
+              </button>
+            </h2>
+            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                أن نكون الخيار الأول لتعلم وممارسة اللغة الإنجليزية.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading12">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                هل الشهادات من ELP معتمدة
+              </button>
+            </h2>
+            <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                نعم، ومن 3 جهات:
+
+                <ol>
+                  <li>الجامعة الإسلامية بالمدينة المنورة.</li>
+                  <li>المجلس الثقافي البريطاني.</li>
+                  <li>أكسفورد.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading13">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                كم عدد المستويات في دورة اللغة الإنجليزية العامة
+              </button>
+            </h2>
+            <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                خمس مستويات؛ تبدأ من: (ما دون المبتدئ) إلى (المتقدم المرتفع)، حسب الإطار المرجعي الأوروبي المشترك للغات
+                (CEFR).
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading14">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">هل يوجد اختبار لتحديد
+                المستوى
+              </button>
+            </h2>
+            <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">نعم، يجب أن
+                يجري المتدرب اختباراً لتحديد المستوى قبل التحاقه بالدورة، وهو اختبار معياري دقيق جداً، مدته ما بين 50 -
+                80 دقيقة.
+                والاختبار يستخدم الذكاء الصناعي في طرح أسئلته (حسب إجابات المتدرب)، كما وأنه مُعتمد لدى كثيرٍ من
+                الجامعات الأمريكية
+                والبريطانية، وحاصل على العديد من شهادات الاعتماد والموثوقية.
+                <P>
+                  ويحصل المتدرب بعد أداءه للاختبار وقبل التحاقه بالمستوى المناسب له على شهادة معتمدة من أكسفورد تثبت
+                  مستواه في اللغة
+                  الإنجليزية.</P>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading15">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                مدة المستوى الواحد في دورة اللغة الإنجليزية العامة
+              </button>
+            </h2>
+            <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                مدة التدريب في المستوى الواحد شهر ونصف (6 أسابيع).
+                بواقع 4 أيام في الأسبوع.
+                خلال 3 ساعات يومياً
+                وبمجموع (72) ساعة تدريبية.
+              </div>
+            </div>
+
+
+
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading16">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                  هل تستطيع الجهات والشركات تحديد نوع الدورات التي تحتاجها </button>
+              </h2>
+              <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">يمكن للجهات والشركات تحديد الاحتياج المطلوب، ويمكننا في ELP أن نقدم لهم
+                  دورات لغة إنجليزية عامة بالإضافة إلى تخصيص
+                  جزء من الدورة لتدريب منسوبي الجهة على المصطلحات التي يحتاجها في مجال عمله.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading17">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">أين يمكن أن تقام الدورات
+                  التدريبية للجهات والشركات
+                </button>
+              </h2>
+              <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">تقام الدورات في مقراتنا في ELP، أو في مقر الجهة أو الشركة (حسب رغبة الجهة أو
+                  الشركة).
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading18">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">هل تستطيع الجهات
+                  والشركات متابعة أداء موظفيها
+                </button>
+              </h2>
+              <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  نعم، وذلك من خلال التقارير الأسبوعية المفصلة التي ترفعها إدارة ELP للجهة أو الشركة عن كل متدرب.
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
     </section>
 
   </main>

@@ -65,8 +65,7 @@
                   data-bs-target="#offcanvasNavbar">من نحن</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#scrollspyTeam" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">
-                  المدربون</a>
+                <a class="nav-link" href="#scrollspyTeam" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">المدربون والمدربات</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#scrollspyPricing" data-bs-dismiss="offcanvas"
@@ -78,7 +77,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#accordionExample" data-bs-dismiss="offcanvas"
-                  data-bs-target="#offcanvasNavbar">الاسئلة الشائعة</a>
+                  data-bs-target="#offcanvasNavbar">الأسئلة الشائعة</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link" href="en.html">English</a>
@@ -95,34 +94,35 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 1rem;
   ">
     <!-- Image -->
     <div style="
-    flex: 0 1 50%;
+      flex: 1 1 50%;
     ">
       <img src="./assets/img/bg/ELP-W.png" style="
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
       ">
     </div>
 
-    <div class="row align-items-center container overflow-hidden" style="
-      flex: 0 1 50%;
+    <div class="align-items-center container overflow-hidden" style="
+      display: flex;
+      flex: 1 1 50%;
+      flex-direction: column;
+      justify-content: center;
     ">
-      <div>
-        <h1 class="display-4 fw-bolder mb-3">
-          تحدث اللغة الانجليزية بطلاقة <br> على يد خبراء من بريطانيا و أمريكا
-        </h1>
-        <div class="d-grid gap-2 d-sm-flex">
-          <button type="button" class="btn btn-primary btn-2xl rounded-pill px-4 gap-3">
-            لمزيد من المعلومات
-          </button>
-          <button type="button" class="btn btn-outline-primaryx btn-outline-accent btn-2xl rounded-pill px-4">سجل
-            الان</button>
-        </div>
+      <h1 class="display-4 fw-bolder mb-3 text-center">
+        تحدث اللغة الإنجليزية بطلاقة <br> على يد خبراء من بريطانيا وأمريكا
+      </h1>
+      <div class="d-grid gap-2 d-sm-flex justify-content-center">
+        <button type="button" style="white-space: nowrap;" class="btn btn-primary btn-2xl rounded-pill px-4 gap-3">
+          لمزيد من المعلومات
+        </button>
+        <button type="button" style="white-space: nowrap;" class="btn btn-outline-primaryx btn-outline-accent btn-2xl rounded-pill px-4">سجل
+          الان</button>
       </div>
     </div>
   </section>
@@ -137,8 +137,8 @@
         <div class="row justify-content-md-center">
           <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
             <h2 class="display-3 fw-bolder mb-4 text-center"><br><mark
-                class="wave-highlight wave-highlight-yellow"><span
-                  class="wave-font-hw display-1 text-accent fw-normal">المميزات</span></mark></h2>
+                class="wave-highlight wave-highlight-yellow">
+                <span class="wave-font-hw display-1 text-accent fw-normal">المميزات</span></mark></h2>
           </div>
         </div>
       </div>
@@ -170,7 +170,7 @@
             </div>
             <h4 class="mb-3">
               دورات مصممة لتحقيق احتياجات
-              المتعلم عبر منهج اكسفورد البريطاني بخمس مستويات
+              المتعلم عبر منهج أكسفورد البريطاني بخمس مستويات
             </h4>
             <p class="mb-3 text-secondary">
 
@@ -185,8 +185,8 @@
               </svg>
             </div>
             <h4 class="mb-3">
-              شهادة حضور وشهادة اجتياز في نهاية كل مستوى كما ان الشهادات معتمدة من الجامعة الاسلامية بالمدينة المنورة،
-              ومن اكسفورد، ومن المجلس الثقافي البريطاني (72 ساعة تدريبية)
+              شهادة حضور وشهادة اجتياز في نهاية كل مستوى كما أن الشهادات معتمدة من الجامعة الإسلامية بالمدينة المنورة،
+              ومن أكسفورد، ومن المجلس الثقافي البريطاني
             </h4>
             <p class="mb-3 text-secondary">
 
@@ -202,7 +202,7 @@
               </svg>
             </div>
             <h4 class="mb-3">
-              مقرات تدريب مهيئة لتعليم اللغة في مباني منفصلة للرجال والنساء في حرم لجامعة الاسلامية بالمدينة المنورة
+              مقرات تدريب مهيئة لتعليم اللغة في مباني منفصلة للرجال والنساء في حرم الجامعة الإسلامية بالمدينة المنورة
             </h4>
             <p class="mb-3 text-secondary">
 
@@ -225,7 +225,7 @@
         <div class="row justify-content-md-center">
           <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
             <h2 class="display-3 fw-bolder mb-4"><br><mark class="wave-highlight wave-highlight-yellow"><span
-                  class="wave-font-hw display-1 text-accent fw-normal">طرق التعليم</span></mark></h2>
+                  class="wave-font-hw display-1 text-accent fw-normal">طرق التعلم</span></mark></h2>
           </div>
         </div>
       </div>
@@ -239,19 +239,19 @@
         </p>
 
         <p dir="auto" class="paragraph" style="text-align: justify;">
-          مدرة الدراسة في كل مستوى هي ما بين شهر ونصف إلى شهرين، وتكون لمدة 4 أيام أسبوعياً خلال الفترة المسائية. حيث
+          مدة الدراسة في كل مستوى هي 5 اسابيع، وتكون لمدة 5 أيام أسبوعياً خلال الفترة المسائية. حيث
           يدرس المتدربون خلال
-          الساعة الأولى والثانية، بينما يتم تخصيص الساعة الثالثة يومياً لممارسة المحادثة مع المدرب.
+          الساعة الأولى والثانية، بينما يتم تخصيص الساعة الثالثة يومياً لممارسة المحادثة مع المدرب/المدربة
         </p>
 
         <p dir="auto" class="paragraph" style="text-align: justify;">
-          يطلب من المتدرب القيام بهام وواجبات يومية عن طريف منصة إلكترونية مخصصة لذلك، بينما يطلب منه أثناء الدورة
+          يطلب من المتدرب القيام بمهام وواجبات يومية عن طريق منصة إلكترونية مخصصة لذلك، بينما يطلب منه أثناء الدورة
           تقديم أكثر من عرض تقديمي يتم
           تدريبه عليه.
         </p>
 
         <p dir="auto" class="paragraph" style="text-align: justify;">
-          يحصل المتدرب أسبوعياً على تقرير مفصل عن أداءه في لبرنامج.
+          يحصل المتدرب أسبوعياً على تقرير مفصل عن أداءه في البرنامج.
           وفي نهاية كل مستوى يحصل المتدرب على شهادتين: شهادة حضور، وشهادة اجتياز (اختيارية).
         </p>
         </div>
@@ -286,9 +286,8 @@
                   class="wave-font-hw display-1 text-accent fw-normal">المناهج</span></mark></h2>
           </div>
           <p dir="auto" class="paragraph" style="text-align: justify;">
-            في ELP نعتمد منهج أكسفورد البريطاني العالمي (سلسلة: OXFORD HEAD WAY SE)، ويتم تحديداً استخدام النسخة
-            المتوافقة مع العادات والتقاليد في
-            المملكة العربية السعودية.
+            في ELP نعتمد منهج أكسفورد البريطاني العالمي (سلسلة: Oxford headway plus se, Headway)، ويتم تحديداً استخدام النسخة
+           المخخصة للمملكة العربية السعودية والمتوافقة مع عاداتها وتقاليدها.
           </p>
         </div>
       </div>
@@ -306,7 +305,7 @@
             <p class="text-white text-uppercase paragraph">
               ELP (ENGLISH LANGUAGE PROGRAM) هو برنامج أنشأته الجامعة الإسلامية بالمدينة المنورة، يهدف إلى تقديم دورات
               في اللغة الإنجليزية
-              بشكل احترافي للأفراد والقطاعات، من خال بيئة محفزة، وأدواتٍ احترافية، وبشهادات معتمدة.
+              بشكل احترافي للأفراد والقطاعات، من خلال بيئة محفزة، وأدواتٍ احترافية، وبشهادات معتمدة.
             </p>
             <a href="#scrollspyContact" class="btn btn-accent btn-3xl rounded mb-0 text-nowrap">انضم معنا</a>
           </div>
@@ -328,11 +327,11 @@
         <div class="row justify-content-center gy-5 gy-md-6 gx-md-4 gy-lg-0 gx-xxl-5">
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="badge wave-bg-yellow text-primary p-3 mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-pie-chart"
-                viewBox="0 0 16 16">
-                <path
-                  d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793V1.018zm1 0V7.5h6.482A7.001 7.001 0 0 0 8.5 1.018zM14.982 8.5H8.207l-4.79 4.79A7 7 0 0 0 14.982 8.5zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
-              </svg>
+              <!-- 
+                width="26" height="26" fill="currentColor" 
+                
+                Replace Me #1 -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="currentColor" viewBox="0 96 960 960" width="26"><path d="M475 916q5 0 11.5-2.5T497 907l337-338q13-13 19.5-29.667Q860 522.667 860 506q0-17-6.5-34T834 442L654 262q-13-13-30-19.5t-34-6.5q-16.667 0-33.333 6.5Q540 249 527 262l-18 18 81 82q13 14 23 32.5t10 40.5q0 38-29.5 67T526 531q-25 0-41.5-7.5t-30.185-21.341L381 429 200 610q-5 5-7 10.526-2 5.527-2 11.842 0 12.632 8.5 21.132 8.5 8.5 21.167 8.5 6.333 0 11.833-3t9.5-7l138-138 42 42-137 137q-5 5-7 11t-2 12q0 12 9 21t21 9q6 0 11.5-2.5t9.5-6.5l138-138 42 42-137 137q-4 4-6.5 10.333Q361 794.667 361 801q0 12 9 21t21 9q6 0 11-2t10-7l138-138 42 42-138 138q-5 5-7 11t-2 11q0 14 8 22t22 8Zm.064 60Q442 976 416 951.5t-31-60.619Q351 886 328 863t-28-57q-34-5-56.5-28.5T216 721q-37-5-61-30t-24-60q0-17 6.724-34.049T157 567l224-224 110 110q8 8 17.333 12.5Q517.667 470 527 470q13 0 24.5-11.5t11.5-24.654q0-5.846-3.5-13.346T548 405L405 262q-13-13-30-19.5t-34-6.5q-16.667 0-33.333 6.5Q291 249 278.059 261.857L126 414q-14 14-19.5 29.5t-6.5 35q-1 19.5 7.5 38T128 550l-43 43q-20-22-32.5-53T40 477q0-30 11.5-57.5T84 371l151-151q22-22 49.793-32.5 27.794-10.5 57-10.5Q371 177 398.5 187.5T448 220l18 18 18-18q22-22 49.793-32.5 27.794-10.5 57-10.5Q620 177 647.5 187.5T697 220l179 179q22 22 33 50.033t11 57Q920 535 909 562.5T876 612L539 949q-13 13-29.532 20t-34.404 7ZM377 430Z"/></svg>
             </div>
             <h4 class="mb-3">
               عقد شراكات فعالة مع المؤسسات المجتمعية.
@@ -341,67 +340,36 @@
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="badge wave-bg-green text-primary p-3 mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                class="bi bi-aspect-ratio" viewBox="0 0 16 16">
-                <path
-                  d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5v-9zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
-                <path
-                  d="M2 4.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H3v2.5a.5.5 0 0 1-1 0v-3zm12 7a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H13V8.5a.5.5 0 0 1 1 0v3z" />
-              </svg>
+              <!-- Replace Me #2 -->
+              <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="currentColor" viewBox="0 96 960 960" width="26"><path d="M479 936 189 777V537L40 456l439-240 441 240v317h-60V491l-91 46v240L479 936Zm0-308 315-172-315-169-313 169 313 172Zm0 240 230-127V573L479 696 249 571v170l230 127Zm1-240Zm-1 74Zm0 0Z"/></svg>
             </div>
             <h4 class="mb-3">
               توفير البيئة التعليمية الملائمة لتعلم وتطبيق اللغة الإنجليزية.
             </h4>
-            <p class="mb-3 text-secondary">
-
-            </p>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="badge wave-bg-pink text-primary p-3 mb-4">
-              <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M23 1v18h-3v-1h2V2H2v16h8v1H1V1zm-7 2H8v1h8zm-2 3V5h-4v1zm-7 5H3v1h4zm0 2H3v1h4zm-4 3h2v-1H3zm14-3a2 2 0 1 1-2-2 2.002 2.002 0 0 1 2 2zm-1 0a1 1 0 1 0-1 1 1.001 1.001 0 0 0 1-1zm.002-4.293a.965.965 0 0 0 1.32.55 1.08 1.08 0 0 1 1.213.207 1.066 1.066 0 0 1 .21 1.21.966.966 0 0 0 .548 1.324 1.064 1.064 0 0 1 0 2.004.965.965 0 0 0-.549 1.323A1.05 1.05 0 0 1 18 16.816v7.046l-3-2.538-3 2.538v-7.046a1.05 1.05 0 0 1-.744-1.49.965.965 0 0 0-.549-1.324 1.064 1.064 0 0 1 0-2.004.966.966 0 0 0 .549-1.324 1.066 1.066 0 0 1 .209-1.21 1.08 1.08 0 0 1 1.212-.206.965.965 0 0 0 1.32-.551 1.064 1.064 0 0 1 2.005 0zm.998 13v-5.04a.93.93 0 0 0-.998.625 1.064 1.064 0 0 1-2.004 0 .93.93 0 0 0-.998-.625v5.039l2-1.692zm-1.94-4.749a1.967 1.967 0 0 1 1.853-1.308 2.12 2.12 0 0 1 .87.197l.058-.091a1.964 1.964 0 0 1 1.116-2.695v-.122a1.966 1.966 0 0 1-1.116-2.695l-.087-.084a1.965 1.965 0 0 1-2.694-1.117h-.12a1.965 1.965 0 0 1-2.694 1.117l-.087.084a1.966 1.966 0 0 1-1.116 2.695v.122a1.964 1.964 0 0 1 1.116 2.695l.058.09a2.12 2.12 0 0 1 .87-.196 1.967 1.967 0 0 1 1.853 1.308L15 17z" />
-                <path fill="none" d="M0 0h24v24H0z" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" fill="currentColor"><path d="M483 781ZM120 896V736q0-83 58.5-141.5T320 536h429q38 0 64.5 26t26.5 64q0 31-19 55.5T773 714l-93 27v184q0 15.909-7.057 28.788T654 975q-12.148 8.25-26.574 10.125Q613 987 598 981l-216-85H120Zm500-140H375q-14 0-23 9t-11 20q-2 11 3.682 22.455Q350.364 818.909 364 824l256 101V756Zm-440 80h113q-6-10-9.5-21.5T280 791q0-39 28-67t67-28h238l145-40q14-4 19-13t3-20q-2-11-10-19t-21-8H320q-58.333 0-99.167 40.833Q180 677.667 180 736v100Zm220-340q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm83 345Zm-83-445Z"/></svg>
             </div>
             <h4 class="mb-3">
               تقديم دورات مرنة لتلبية رغبات العميل.
             </h4>
-            <p class="mb-3 text-secondary">
-
-            </p>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="badge wave-bg-cyan text-primary p-3 mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-alarm"
-                viewBox="0 0 16 16">
-                <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
-                <path
-                  d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" fill="currentColor"><path d="M796 935 533 672q-30 26-70 40.5T378 727q-108 0-183-75t-75-181q0-106 75-181t182-75q106 0 180.5 75T632 471q0 43-14 83t-42 75l264 262-44 44ZM377 667q81 0 138-57.5T572 471q0-81-57-138.5T377 275q-82 0-139.5 57.5T180 471q0 81 57.5 138.5T377 667Zm-74-89 29-87-73-56h87l30-87 30 87h86l-73 56 29 87-72-55-73 55Z"/></svg>
             </div>
             <h4 class="mb-3">
               تقديم دورات تخصصية لتحقيق احتياج سوق العمل.
             </h4>
-            <p class="mb-3 text-secondary">
-
-            </p>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="badge wave-bg-cyan text-primary p-3 mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-alarm"
-                viewBox="0 0 16 16">
-                <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
-                <path
-                  d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" fill="currentColor"><path d="m480 680 56-128 128-56-128-56-56-128-56 128-128 56 128 56 56 128ZM80 976V236q0-23 18-41.5t42-18.5h680q23 0 41.5 18.5T880 236v520q0 23-18.5 41.5T820 816H240L80 976Zm60-145 75-75h605V236H140v595Zm0-595v595-595Z"/></svg>
             </div>
             <h4 class="mb-3">
               تقديم دورات لغة إنجليزية بكافة المستويات عبر استخدام مناهج عالمية رائدة ومتطورة.
             </h4>
-            <p class="mb-3 text-secondary">
-
-            </p>
           </div>
         </div>
       </div>
@@ -497,10 +465,12 @@
         </div>
       </div>
 
-      جميع المدربون والمدربات في ELP لغتهم الأولى هي اللغة الإنجليزية (NATIVE SPEAKER)، من أمريكا وبريطانيا، وهم
       <p dir="auto" class="paragraph center">
-        مدرسون ذو خبرة لمدة
-        سنوات في تعليم اللغة، وحاصلون على شهادات مهنية تضمن تمكنهم من تعليم اللغة بإجادة تامة.
+        جميع المدربون والمدربات في
+        ELP
+        لغتهم الأولى هي اللغة الإنجليزية 
+        (NATIVE SPEAKER)، 
+        من أمريكا وبريطانيا, وهم مدرسون ذو خبرة لمدة سنوات في تعليم اللغة، وحاصلون على شهادات مهنية تضمن تمكنهم من تعليم اللغة بإجادة تامة.
       </p>
 
       <!-- <div class="container overflow-hidden">
@@ -785,7 +755,7 @@
               <div>
                 <h4 class="mb-3">العنوان</h4>
                 <address class="mb-0 text-secondary">
-                  الجامعة الاسلامية, المدينة المنورة
+                  الجامعة الإسلامية, المدينة المنورة
                 </address>
               </div>
             </div>
@@ -818,7 +788,7 @@
                 <h4 class="mb-3">البريد الالكتروني</h4>
                 <p>
                   <a class="link-secondary text-decoration-none"
-                    href="mailto:EngLPIUSA@gmail.com">EngLPIUSA@gmail.com</a>
+                    href="mailto:EngLPIUSA@gmail.com">EngliPIUSA@gmail.com</a>
                 </p>
               </div>
             </div>
@@ -849,6 +819,20 @@
                 محفزة، وأدواتٍ
                 احترافية، وبشهادات معتمدة.
                 (برنامج اللغة الإنجليزية) ELP: English Language Program
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading11">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                ما هي رؤية ELP
+              </button>
+            </h2>
+            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                أن نكون الخيار الأول لتعلم وممارسة اللغة الإنجليزية.
               </div>
             </div>
           </div>
@@ -998,20 +982,7 @@
             </div>
           </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading11">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                ما هي رؤية ELP
-              </button>
-            </h2>
-            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                أن نكون الخيار الأول لتعلم وممارسة اللغة الإنجليزية.
-              </div>
-            </div>
-          </div>
+        
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading12">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1058,16 +1029,8 @@
             </h2>
             <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14"
               data-bs-parent="#accordionExample">
-              <div class="accordion-body">نعم، يجب أن
-                يجري المتدرب اختباراً لتحديد المستوى قبل التحاقه بالدورة، وهو اختبار معياري دقيق جداً، مدته ما بين 50 -
-                80 دقيقة.
-                والاختبار يستخدم الذكاء الصناعي في طرح أسئلته (حسب إجابات المتدرب)، كما وأنه مُعتمد لدى كثيرٍ من
-                الجامعات الأمريكية
-                والبريطانية، وحاصل على العديد من شهادات الاعتماد والموثوقية.
-                <P>
-                  ويحصل المتدرب بعد أداءه للاختبار وقبل التحاقه بالمستوى المناسب له على شهادة معتمدة من أكسفورد تثبت
-                  مستواه في اللغة
-                  الإنجليزية.</P>
+              <div class="accordion-body">
+                نعم يوجد اختبار لتحديد المستوى،وهو اختبار محوسب يحدد مستوى المتدرب/المتدربة بدقة.
               </div>
             </div>
           </div>
@@ -1083,10 +1046,8 @@
             <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                مدة التدريب في المستوى الواحد شهر ونصف (6 أسابيع).
-                بواقع 4 أيام في الأسبوع.
-                خلال 3 ساعات يومياً
-                وبمجموع (72) ساعة تدريبية.
+             مدة التدريب في المستوى الواحد هي 5 اسابيع ، 5 أيام في الأسبوع. 3 ساعات باليوم
+                بواقع (72) ساعة تدريبية.
               </div>
             </div>
 
@@ -1165,7 +1126,7 @@
             <div class="widget">
               <h4 class="widget-title mb-4">تواصل معنا</h4>
               <address class="mb-4">
-                الجامعة الاسلامية, المدينة المنورة
+                الجامعة الإسلامية, المدينة المنورة
               </address>
               <p class="mb-1">
                 <a class="link-secondary text-decoration-none" href="tel:+966564050416" dir="auto">+966564050416</a>

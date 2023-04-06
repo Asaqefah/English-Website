@@ -42,6 +42,12 @@ mark.wave-highlight > span {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  html {
+    font-size: .8rem;
+  }
+}
+
 .paragraph {
   font-size: 1.5rem;
 }

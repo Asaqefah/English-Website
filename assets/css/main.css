@@ -19,6 +19,12 @@ mark.wave-highlight > span {
   color: var(--bs-heading-color) !important;
 }
 
+.center-width {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
 /* ------ Typography ------ */
 
 @font-face {
@@ -52,8 +58,10 @@ mark.wave-highlight > span {
   font-size: 1.5rem;
 }
 
-.paragraph.center {
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
+.text-justify {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
 }

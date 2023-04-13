@@ -3,7 +3,7 @@
 }
 
 html[dir="rtl"] * {
-  font-family: "SABICTypefaceHeadline", sans-serif !important;
+  font-family: "SABICTypefaceHeadline", "Almarai", sans-serif !important;
 }
 
 p {

@@ -52,6 +52,12 @@ mark.wave-highlight > span {
   html {
     font-size: .8rem;
   }
+
+  .display-4 {
+    font-size: calc(1.475rem + 1.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
 }
 
 .paragraph {
@@ -64,4 +70,12 @@ mark.wave-highlight > span {
 
 .text-center {
   text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5 !important;
+}
+
+.text-no-break {
+  white-space: nowrap;
 }
